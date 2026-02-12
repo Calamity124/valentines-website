@@ -208,43 +208,41 @@ body{
     }
 }
 @media (max-width: 768px) {
-    .profile-pic {
-        height: 40px;
-        width: 40px;
-    }
 
-    .container-2 p {
-        font-size: 1.8rem;
-    }
-}
-
-@media (max-width: 428px) {
     #header-bar {
-        min-height: 50px;
-        padding: 5px;
+        height: 55px;
+        padding: 0 10px;
+    }
+
+    .profile-pic {
+        width: 40px;
+        height: 40px;
     }
 
     .website-name h3 {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
     .my-info h3 {
-        display: none;
+        display: none; /* hide "Message me here" on mobile */
+    }
+
+    .social-app {
+        width: 22px;
+        height: 22px;
     }
 
     .container {
-        padding: 12px;
+        width: 95%;
+        padding: 15px;
     }
 
     .container-2 p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .cat-gif {
-        height: 90px;
-        width: 90px;
+        width: 100px;
+        height: auto; /* keep aspect ratio */
     }
 }
-
-
-
