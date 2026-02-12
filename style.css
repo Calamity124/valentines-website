@@ -1,0 +1,242 @@
+    body{
+        background-image: url(valentines.png);
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    margin: 0;
+     padding-top: 60px;
+      
+
+    }
+    #main-body
+    {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    font-family: 'Great Vibes', cursive;
+    z-index: 20;
+
+      
+    }
+    #header-bar
+    {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white ;
+        width: 100%;
+        padding-left: 20px;
+        top: 0;
+        left: 0;
+        font-size: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        min-height: 60px;
+       
+        
+    }
+    #overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(190, 187, 187, 0.5);
+     
+    cursor: pointer; 
+    border-radius: 20px;
+     z-index: 1;
+     inset: 0;
+     pointer-events: none;
+}
+    .profile-pic
+    {
+        height: 50px;
+        border-radius: 50%;
+        width: 50px;
+        object-fit: cover;
+        
+        
+        
+    }
+    .website-name
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        
+        
+    }
+    .website-name h3{
+        margin-left: 10px;
+    }
+
+    .my-info
+    {
+        padding-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+       
+    }
+    .social-app
+    {
+        height: 30px;
+        width: 30px;
+        
+    }
+    .container
+    {
+    padding: 40px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+     box-shadow:    0 0 10px #ff98d4;
+    z-index: 11;
+
+
+    }
+    .cat-gif
+    {
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+         box-shadow:    0 0 10px #ff98d4;
+    }
+    .container-2
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+     .container-2 p{
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        word-wrap: break-word;
+        
+     }
+     .btns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 20px;
+    width: 100%;
+}
+
+    .yes-btns
+    {
+        width: auto;
+        padding: 14px 28px;
+        border-radius: 30px;
+        border: none;
+        background-color: rgb(236, 95, 118);
+        color: white;
+       margin-right: 10px;
+         box-shadow:    0 0 10px #fe6363;
+         cursor: pointer;
+         transition: transform 0.2s ease;
+    }
+    .no-btns    
+    {
+          width: auto;
+        padding: 14px 28px;
+        border-radius: 30px;
+        border: none;
+        background-color: white ;   
+        border: 1px solid rgb(255, 105, 130);
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        z-index: 10;
+    }
+    .yes-btns, .no-btns
+    {
+        flex: 1 1 120px;
+        text-align: center;
+
+    }
+    .no-btns:hover, .yes-btns:hover{
+       
+        transform: translateY(-3px);
+    }
+
+    .hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hearts span {
+    position: absolute;
+    bottom: -30px;
+    font-size: 20px;
+    animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+@media (max-width: 768px) {
+    .profile-pic {
+        height: 40px;
+        width: 40px;
+    }
+
+    .container-2 p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #header-bar {
+        min-height: 50px;
+        padding: 5px;
+    }
+
+    .website-name h3 {
+        font-size: 0.75rem;
+    }
+
+    .my-info h3 {
+        display: none;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    .container-2 p {
+        font-size: 1.1rem;
+    }
+
+    .cat-gif {
+        height: 90px;
+        width: 90px;
+    }
+}
+
