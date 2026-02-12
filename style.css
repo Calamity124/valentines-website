@@ -3,7 +3,7 @@
     box-sizing: border-box;
    } 
 body{
-        background-image: url(valentines.png);
+        background-image: url(hays.jpg);
     background-size: cover;        
     background-position: center;   
     background-repeat: no-repeat; 
@@ -218,7 +218,7 @@ body{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 428px) {
     #header-bar {
         min-height: 50px;
         padding: 5px;
@@ -245,5 +245,6 @@ body{
         width: 90px;
     }
 }
+
 
 
